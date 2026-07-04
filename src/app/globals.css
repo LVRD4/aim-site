@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Pinyon+Script&display=swap");
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-deep: #20445c;
+  --color-deepest: #173140;
+  --color-gold: #c2a878;
+  --color-light: #dce6ec;
+  --color-line: #d9d9d9;
+  --color-gray: #3c5462;
+  --color-ink: #152734;
+  --color-white: #ffffff;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-script: "Pinyon Script", cursive;
+  --max-width-site: 1180px;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
